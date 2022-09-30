@@ -1,4 +1,16 @@
 var mysql = require('mysql2');
+//var chat = new Sequelize('chat', 'root', '');
+
+var con = mysql.createConnection({
+  // host: "localhost",
+  user: "root",
+  password: "",
+  database: "chat"
+});
+
+con.connect();
+
+module.exports = con;
 
 // Create a database connection and export it from this file.
 // Confirm that the credentials supplied for the connection are correct.

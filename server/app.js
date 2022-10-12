@@ -20,7 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 // Set up our routes
-app.use('/classes', router);
+app.use('/classes', router); //why is this under classes?
 
 // Serve the client files
 app.use(express.static(__dirname + '/../client'));
